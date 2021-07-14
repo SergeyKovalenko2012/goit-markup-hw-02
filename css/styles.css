@@ -26,6 +26,9 @@ a {
   font-size: 26px;
   line-height: 31px;
 }
+.web {
+  color: #2196f3;
+}
 
 .navigation_list-a {
   color: #212121;
@@ -143,6 +146,7 @@ a {
   font-size: 14px;
   cursor: pointer;
   color: #ffffff;
+  font-style: normal;
 }
 
 .footer-email {
@@ -150,6 +154,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -158,6 +163,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -173,6 +179,20 @@ a {
   color: #212121;
   border: none;
   cursor: pointer;
+}
+
+.servises-bigtext {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.servises-smalltext {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
 }
 
 .title_list-button:hover,
