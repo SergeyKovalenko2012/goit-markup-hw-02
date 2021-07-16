@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif, "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1.25;
 }
 
@@ -18,24 +18,29 @@ ul {
   list-style: none;
 }
 
+address {
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
 
 .logo {
-  color: var(--primary-text-color);
+  color: var(--active-color);
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
+  cursor: pointer;
 }
 
-.web {
-  color: var(--active-color);
+.logo-dark {
+  color: var(--primary-text-color);
 }
 
-.navigation_list-a {
+.navigation__list-link {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -47,12 +52,12 @@ a {
   text-transform: uppercase;
 }
 
-.navigation_list-a:hover,
-.navigation_list-a:focus {
+.navigation__list-link:hover,
+.navigation__list-link:focus {
   color: var(--active-color);
 }
 
-.contact_list-a {
+.contact__list-link {
   color: var(--description-color);
   font-style: normal;
   font-weight: 500;
@@ -60,8 +65,8 @@ a {
   line-height: 1.14;
 }
 
-.contact_list-a:hover,
-.contact_list-a:focus {
+.contact__list-link:hover,
+.contact__list-link:focus {
   color: var(--active-color);
 }
 
@@ -73,6 +78,7 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
+  text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
@@ -91,7 +97,7 @@ a {
   margin: 0 auto; */
 }
 
-.doing_text-big {
+.doing_title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -99,7 +105,7 @@ a {
   text-transform: uppercase;
 }
 
-.doing_text-small {
+.doing_discription {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.7;
@@ -138,14 +144,18 @@ a {
   background-color: var(--footer-bg-color);
 }
 
-.footer-logo {
-  color: var(--primary-white-color);
+/* .footer-logo {
+  color: var(--active-color);
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   cursor: pointer;
+} */
+
+.logo-white {
+  color: var(--primary-white-color);
 }
 
 .footer-adress {
@@ -153,27 +163,28 @@ a {
   font-size: 14px;
   cursor: pointer;
   color: var(--primary-white-color);
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 1.17;
 }
 
-.footer-email {
-  font-weight: 400;
-  font-size: 14px;
-  cursor: pointer;
-  font-style: normal;
-  line-height: 1.17;
-  color: var(--adress-color);
-}
-
+.footer-email,
 .footer-phone {
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 1.17;
   color: var(--adress-color);
 }
+
+/* {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  font-style: normal;
+  line-height: 1.17;
+  color: var(--adress-color);
+} */
 
 /* Portfolio */
 .title_list-button {
@@ -189,14 +200,14 @@ a {
   cursor: pointer;
 }
 
-.servises-bigtext {
+.servises__list-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   color: var(--primary-text-color);
 }
 
-.servises-smalltext {
+.servises__title-discription {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
